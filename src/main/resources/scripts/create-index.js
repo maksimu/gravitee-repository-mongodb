@@ -71,4 +71,8 @@ db.rating.reIndex();
 // "ratingAnswers" collection
 db.ratingAnswers.dropIndexes();
 db.ratingAnswers.createIndex( { "rating" : 1 } );
-db.ratingAnswers.reIndex();
+
+// "notifications" collection
+db.notifications.dropIndexes();
+db.notifications.createIndex( { "username" : 1 } );
+db.notifications.reIndex();
